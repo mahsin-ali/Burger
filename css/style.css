@@ -1,0 +1,392 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap');
+*
+/*global css section*/
+{
+	margin:0;
+	padding: 0;
+}
+h1,h2{
+	font-family: 'Alfa Slab One', cursive;
+}
+h3,h4,5,h6{
+	font-family: 'Bebas Neue', cursive;
+}
+p,span,input{
+	font-family: 'Montserrat', sans-serif;
+}
+.container{
+	width: 1140px;
+	margin: 0 auto;
+}
+/*header section css here*/
+.header{
+	width: 100%;
+	background: url(../img/banner.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	position: relative;
+}
+.nav-bar{
+	display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.delivery{
+	display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.delivery img{
+	margin-right: 10px;
+}
+.delivery span{
+	vertical-align: middle;
+    font-size: 17px;
+    color: #3d2514;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.menu-item{
+	text-align: right;
+	align-items: center;
+	margin-top: 10px;
+}
+.menu-item ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 25px;
+}
+.menu-item ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Bebas Neue', cursive;
+	font-weight: 700;
+	color: #3d2514;
+	letter-spacing: 2px;
+	font-size: 18px;
+}
+.menu-item ul li a:hover{
+	color: red;
+	transition: 0.5s ease-in-out;
+}
+.text h3{
+	border: 2px dashed #3d2514;
+	display: inline-block;
+	padding: 5px 10px;
+
+}
+.banner-text{
+	height: 60vh;
+	vertical-align: middle;
+	display: table-cell;
+
+}
+.text h1{
+	font-size: 83px;
+	color: #3d2514;
+	letter-spacing: 2px;
+	text-shadow: 3px 5px white;
+
+}
+
+.text h2{
+	font-size: 43px;
+	color: #3d2514;
+	letter-spacing: 2px;
+	text-shadow: 3px 5px white;
+}
+.book-circle{
+	width: 140px;
+	height: 140px;
+	background: red;
+	border-radius: 50%;
+	position: absolute;
+	top: 330px;
+	right: 558px;
+}
+
+.round{
+	text-align: center;
+	color: white;
+}
+.round p{
+	margin-top: 30px;
+    font-size: 30px;
+    display: inline-block;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 400;
+}
+
+.round h3{
+	letter-spacing: 2px;
+}
+/*blog gallery css here*/
+
+.blog-gallery{
+	width: 100%;
+	padding: 70px 0;
+}
+.gallery{
+	display: flex;
+	justify-content: space-around;
+}
+.left{
+	position: relative;
+	padding: 15px;
+
+}
+.right{
+	padding: 15px;
+}
+.top{
+	margin-bottom: 25px;
+}
+.top,.bottom{
+	position: relative;
+}
+.post-text{
+	position: absolute;
+    top: 40px;
+    left: 35px;
+    color: white;
+}
+
+.post-text h4{
+	font-size: 18px;
+}
+
+.post-text h3{
+	font-size: 22px;
+	letter-spacing: 2px;
+}
+
+.blog-gallery .button{
+	text-align: center;
+}
+.blog-gallery .button button{
+	padding: 14px;
+    border: none;
+    border: 1px solid red;
+    background: red;
+    color: white;
+    font-weight: 600px;
+}
+/*blog item css here*/
+.title{
+	text-align: center;
+	color: #3d2514;
+	margin-bottom: 20px;
+}
+
+.blog-item .title h1{
+	letter-spacing: 2px;
+	font-size: 43px;
+}
+.item-gallery{
+	margin: 40px 0;
+	display: flex;
+}
+.item{
+	padding: 15px;
+	text-align: center;
+
+}
+.item h2{
+	letter-spacing: 2px;
+	color: #3d2514;
+	text-transform: uppercase;
+
+
+}
+.item button{
+	padding: 14px;
+    border: none;
+    border: 1px solid red;
+    background: red;
+    color: white;
+    font-weight: 600px;
+    margin-top: 12px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+/*event section css here*/
+.event-body{
+	width: 100%;
+	display: flex;
+	padding: 25px;
+	box-shadow: 0px 25px 45px #b7bcbb;
+}
+.event-text{
+	margin-top: 40px;
+    width: 60%;
+    text-align: left;
+    padding: 60px 40px 0 40px;
+}
+.event-text h2{
+	letter-spacing: 2px;
+	color: #3d2514;
+}
+.event-text h4{
+	letter-spacing: 2px;
+	color: #3d2514;
+}
+
+/*slider css here*/
+.owl-carousel{
+	display: none;
+	text-align: left;
+}
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    display: none;
+}
+.owl-theme .owl-dots, .owl-theme .owl-nav {
+    text-align: left;
+    -webkit-tap-highlight-color: transparent;
+    background: none;
+    color: #ffc045;
+  }
+
+ .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #ffc045;
+}
+.owl-theme .owl-dots {
+    position: absolute;
+    margin-top: -60px;
+  	left: 50px;
+}
+
+/*reservation section css here*/
+.reservation{
+	width: 100%;
+	background: url(../img/burder-s.png);
+	background-size: cover;
+	position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	margin-top: 50px;
+    padding: 30px 25px;
+}
+
+.book{
+	text-align: center;
+}
+.book h1{
+	color: #3d2514;
+
+}
+.book h3{
+	color: #3d2514;
+
+}
+
+.booking-form{
+	text-align: center;
+	margin-top: 25px;
+}
+
+.booking-form form input{
+	padding: 15px 25px;
+    font-size: 16px;
+    margin: 12px 15px;
+    border-radius: 4px;
+}
+
+.booking-form button{
+	padding: 16px 85px;
+    border: none;
+    background: red;
+    color: white;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+/*footer section css here*/
+
+.footer{
+	width: 100%;
+	background: url(../img/bottom.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 70px 0;
+    height: 100vh;
+	
+}
+
+.footer-info{
+	display: flex;
+    justify-content: space-between;
+}
+.logo{
+	width: 50%;
+    padding: 20px 0;
+}
+
+.logo img{
+	margin-bottom: 48px;
+}
+.logo p{
+	color: white;
+}
+.right2{
+	width: 100%;
+    margin: 200px 30px 0px 0px;
+    padding: 60px 0px;
+}
+
+.right2 i{
+	font-size: 35px;
+    color: #fff;
+}
+
+.icon-1,.icon-2{
+	display: flex;
+	padding: 10px 10px;
+}
+.right2 h4{
+    margin-left: 13px;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.social-icon{
+	display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+
+.rights{
+	color: #fff;
+    margin: 25px 0px 0px 0px;
+}
+.social-icons{
+	text-align: center;
+	margin: 20px 0px 0px 0px;
+}
+.social-icons ul li {
+	display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    margin-left: 20px;
+
+}
+.social-icons ul li i{
+	color: black;
+    font-size: 35px;
+    padding-top: 7px;
+
+}
